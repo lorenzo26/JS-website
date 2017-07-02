@@ -1,18 +1,19 @@
 function myFooter() {
 	var footer = document.createElement("DIV");
 	footer.className="footer-content";
-		var fpara = document.createElement("P");
-		var fcontent = document.createTextNode("Copyright 2017 Benz CAFE")
-		fpara.appendChild(fcontent);
+	footer.id="idfooter";
+		var pFooter = document.createElement("P");
+		var pFooterC = document.createTextNode("Copyright 2017 Benz CAFE")
+		pFooter.appendChild(pFooterC);
 
 		var fig =document.createElement("FIGCAPTION");
-		var figcontent = document.createTextNode("Victory U-Belt, España Blvd corner Padre Campa St, Sampaloc, Manila, Metro Manila")
+		var figC = document.createTextNode("Victory U-Belt, España Blvd corner Padre Campa St, Sampaloc, Manila, Metro Manila")
 
-		fig.appendChild(figcontent);
+		fig.appendChild(figC);
 
-		footer.appendChild(fpara);
+		footer.appendChild(pFooter);
 
-		footer.appendChild(fig);
+		footer.appendChild(figC);
 
 	 document.body.appendChild(footer);
 }
